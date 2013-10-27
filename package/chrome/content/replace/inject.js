@@ -44,6 +44,10 @@ ru.dclan.ffdawfix.replacers.inject = function( f ) {
 		f.addJS( "daw/sellall.js" );
 		return;
 	}
+	if( f.checkLocation( "/vr/PersonalQuests/LicenseToKill.aspx" ) ) {
+		f.addJS( "daw/licensetokill.js" );
+		return;
+	}
 	if( f.checkLocation( "/vr/Places/GiftShop.aspx" ) ) {
 		f.addJS( "daw/giftextra.js"  );
 		return;
